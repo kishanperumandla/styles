@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin respond-mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin base-btn {
+  padding: 10px 16px;
+  border-radius: $border-radius;
+  border: unset;
+}

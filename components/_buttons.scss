@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.btn-primary {
+  @include base-btn;
+  background: $primary-color;
+  color: white;
+}
+
+.btn-primary:disabled {
+  background: gray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
